@@ -1,0 +1,17 @@
+access-list 101 extended permit ip host 172.16.24.1 object-group WEB-TEST
+access-list 101 extended permit ip host 172.16.24.2 object-group WEB-TEST
+access-list 101 extended permit ip host 172.16.24.3 object-group WEB-TEST
+access-list 101 extended permit ip host 172.16.24.4 object-group WEB-TEST
+access-list 101 extended permit ip host 172.16.24.5 object-group WEB-TEST
+access-list 101 extended permit ip host 172.16.24.6 object-group WEB-TEST
+access-list 101 extended permit ip host 172.16.24.7 object-group WEB-TEST
+access-list 102 extended deny ip host 172.16.24.11 object-group WEB-DEV
+access-list 102 extended deny ip host 172.16.24.12 object-group WEB-DEV
+access-list 102 extended deny ip host 172.16.24.13 object-group WEB-DEV
+access-list 102 extended deny ip host 172.16.24.14 object-group WEB-DEV
+access-list 102 extended deny ip host 172.16.24.15 object-group WEB-DEV
+access-list 102 extended deny ip host 172.16.24.15 object-group WEB-DEV
+access-list 102 extended deny ip host 172.16.24.15 object-group WEB-DEV
+access-list 102 extended permit ip host 172.16.24.16 object-group WEB-DEV
+access-list 102 extended permit ip host 172.16.24.17 object-group WEB-DEV
+access-list 102 extended permit ip host 172.16.24.18 object-group WEB-DEV

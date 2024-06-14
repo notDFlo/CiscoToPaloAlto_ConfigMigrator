@@ -1,0 +1,37 @@
+object-group network WEB-TEST
+ network-object host 172.16.24.1
+ network-object host 172.16.24.2
+ network-object host 172.16.24.3
+ network-object host 172.16.24.4
+ network-object host 172.16.24.5
+ network-object host 172.16.24.6
+ network-object host 172.16.24.7
+ network-object host 172.16.24.8
+ network-object host 172.16.24.9
+ network-object host 172.16.24.10
+ network-object host 172.16.24.11
+ network-object host 172.16.24.12
+ network-object host 172.16.24.13
+ network-object host 172.16.24.14
+ network-object host 172.16.24.15
+ network-object host 172.16.24.16
+ network-object host 172.16.24.17
+
+object-group network WEB-DEV
+ network-object host 172.16.24.18
+ network-object host 172.16.24.19
+ network-object host 172.16.24.20
+ network-object host 172.16.24.21
+ network-object host 172.16.24.22
+ network-object host 172.16.24.23
+ network-object host 172.16.24.24
+ network-object host 172.16.24.25
+ network-object host 172.16.24.26
+ network-object host 172.16.24.27
+ network-object host 172.16.24.28
+ network-object host 172.16.24.29
+ network-object host 172.16.24.30
+ network-object host 172.16.24.31
+ network-object host 172.16.24.32
+ network-object host 172.16.24.33
+ network-object host 172.16.24.34
