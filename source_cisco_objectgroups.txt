@@ -35,3 +35,11 @@ object-group network WEB-DEV
  network-object host 172.16.24.32
  network-object host 172.16.24.33
  network-object host 172.16.24.34
+
+object-group service WEB-PORTS tcp
+ port-object eq www
+ port-object eq https
+
+object-group network VIPS
+ network-object 169.254.0.0 255.255.255.0
+

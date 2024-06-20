@@ -15,3 +15,9 @@ access-list 102 extended deny ip host 172.16.24.15 object-group WEB-DEV
 access-list 102 extended permit ip host 172.16.24.16 object-group WEB-DEV
 access-list 102 extended permit ip host 172.16.24.17 object-group WEB-DEV
 access-list 102 extended permit ip host 172.16.24.18 object-group WEB-DEV
+
+
+
+access-list 101 extended permit tcp any object-group WEB-SRVS eq www 
+access-list 101 extended permit tcp any object-group WEB-SRVS eq https
+access-list 101 extended permit tcp any object-group VIPS object-group WEB-PORTS

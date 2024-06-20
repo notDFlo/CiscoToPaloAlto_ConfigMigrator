@@ -73,7 +73,7 @@ def convert_to_cidr(ip, wildcard):
     return f"{subnet}/{netmask}"
 
 # Read Cisco ACL from file
-with open('cisco_acl_list.txt', 'r') as file:
+with open('source_cisco_acls.txt', 'r') as file:
     cisco_acl = file.read()
 
 palo_alto_set_commands = convert_cisco_to_palo_acl_set_commands_3(cisco_acl)

@@ -7,14 +7,26 @@ def main():
   Generate_PaloAlto_ObjectGroup_SetCommands()
   Generate_PaloAlto_ACL_SetCommands()
   
-
 def Generate_PaloAlto_ObjectGroup_SetCommands():
-  with open('cisco_object_groups.txt', 'r') as objectgroup_input_file:
+  with open('source_cisco_objectgroups.txt', 'r') as objectgroup_input_file:
       cisco_object_groups = objectgroup_input_file.read()
-  obj_groups(cisco_object_groups)
+  pa_objgroup_setcommands_content = obj_groups(cisco_object_groups)
+  pa_objgroup_setcommands_filepath = 'palo_alto_setcommands_output.sh'
+
+  # append_to_command_output_file(pa_objgroup_setcommands_filepath, pa_objgroup_setcommands_content)
 
 def Generate_PaloAlto_ACL_SetCommands():
-  with open('cisco_acl_list.txt', 'r') as acl_input_file:
+  with open('source_cisco_acls.txt', 'r') as acl_input_file:
     cisco_acl_list = acl_input_file.read()
-  acls(cisco_acl_list)
+  pa_acl_setcommands_content = acls(cisco_acl_list)
+  pa_acl_setcommands_filepath = 'palo_alto_setcommands_output.sh'
+  # append_to_command_output_file(pa_acl_setcommands_filepath, pa_acl_setcommands_content)
 
+
+# def append_to_command_output_file(file_path, content):
+#     try:
+#         with open(file_path, 'a') as file:
+#             file.write(content)
+#         print(f"Content successfully written to {file_path}")
+#     except Exception as e:
+#         print(f"An error occurred while writing to the file: {e}")
