@@ -1,6 +1,6 @@
 import re
 
-def convert_cisco_to_palo_acl_set_commands_3(cisco_acl):
+def convert_cisco_to_palo_acl_set_commands(cisco_acl):
     set_commands = []
     
     acl_regex = re.compile(
@@ -75,9 +75,3 @@ def convert_to_cidr(ip, wildcard):
 # Read Cisco ACL from file
 with open('source_cisco_acls.txt', 'r') as file:
     cisco_acl = file.read()
-
-palo_alto_set_commands = convert_cisco_to_palo_acl_set_commands_3(cisco_acl)
-
-print("\n # Generated Palo Alto __ACL__ Set Commands:\n")
-for command in palo_alto_set_commands:
-    print(command)

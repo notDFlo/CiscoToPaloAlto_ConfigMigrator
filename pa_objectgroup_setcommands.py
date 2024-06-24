@@ -1,6 +1,6 @@
 import re
 
-def convert_cisco_object_groups_to_palo_set_commands_3(cisco_object_groups):
+def convert_cisco_object_groups_to_palo_set_commands(cisco_object_groups):
     set_commands = []
     address_commands = []
     service_commands = []
@@ -81,9 +81,3 @@ def convert_to_cidr(ip, subnet):
 # Read Cisco Object Groups from file
 with open('source_cisco_objectgroups.txt', 'r') as file:
     cisco_object_groups = file.read()
-
-palo_alto_set_commands = convert_cisco_object_groups_to_palo_set_commands_3(cisco_object_groups)
-
-print("\n# Generated Palo Alto Object Group Set Commands:\n")
-for command in palo_alto_set_commands:
-    print(command)
