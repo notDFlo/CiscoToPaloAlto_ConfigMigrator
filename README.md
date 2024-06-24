@@ -18,6 +18,6 @@ The output is written to the (specified) file (or default: ./palo_alto_setcomman
       --f: The file path to append content to (Default: \'palo_alto_setcommands.sh\' in  director')
 # Example Usage:
 -     python app.py --h (shows this help menu)
-      python app.py --a true (appends to output file, and uses default file path for output)
+      python app.py --a (appends to output file, and uses default file path for output)
       python app.py --f /path/to/output-file.sh (specified output file (follows default logic to overwrite if file exists))
-      python app.py --a true --f /path/to/output-file.sh  (appends to output file, and uses specified file path for output.)
+      python app.py --a --f /path/to/output-file.sh  (appends to output file, and uses specified file path for output.)
