@@ -10,18 +10,14 @@ Currently, the script generates Palo Alto set commands for:
  - ACLs
 
 
-# From the help arg output: 
+## From the help arg output: 
 The output is written to the (specified) file (or default: ./palo_alto_setcommands.sh).
--  Options:
-    --h: Show Help Menu (this)
-    --a: Append or overwrite current output shell script file (Default: Overwrite)
-    --f: The file path to append content to (Default: \'palo_alto_setcommands.sh\' in  director')
--  Example Usage:
-    python app.py --hkm
-       shows this help menu.
-    python app.py --a true
-       appends to output file, and uses default file path for output.
-    python app.py --f /path/to/output-file.sh
-       overwrites specified output file.
-    python app.py --a true --f /path/to/output-file.sh
-       appends to output file, and uses specified file path for output.
+# Options:
+-     --h: Show Help Menu (this)
+      --a: Append or overwrite current output shell script file (Default: Overwrite)
+      --f: The file path to append content to (Default: \'palo_alto_setcommands.sh\' in  director')
+# Example Usage:
+-     python app.py --h (shows this help menu)
+      python app.py --a true (appends to output file, and uses default file path for output)
+      python app.py --f /path/to/output-file.sh (specified output file (follows default logic to overwrite if file exists))
+      python app.py --a true --f /path/to/output-file.sh  (appends to output file, and uses specified file path for output.)
